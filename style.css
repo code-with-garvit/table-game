@@ -1,0 +1,405 @@
+
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+main, article, aside, figure, footer, header, nav, section, details, summary {
+  display: block;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+img,
+object,
+embed {
+  max-width: 100%;
+}
+
+
+html {
+  overflow-y: scroll;
+}
+ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted #000;
+  cursor: help;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+th {
+  font-weight: bold;
+  vertical-align: bottom;
+}
+
+td {
+  font-weight: normal;
+  vertical-align: top;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+pre {
+  white-space: pre;
+  
+  white-space: pre-wrap;
+ 
+  white-space: pre-line;
+  
+  word-wrap: break-word;
+
+}
+
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+
+input[type="checkbox"] {
+  vertical-align: bottom;
+}
+
+.ie7 input[type="checkbox"] {
+  vertical-align: baseline;
+}
+
+.ie6 input {
+  vertical-align: text-bottom;
+}
+
+select, input, textarea {
+  font: 99% sans-serif;
+}
+
+table {
+  font-size: inherit;
+  font: 100%;
+}
+
+small {
+  font-size: 85%;
+}
+
+strong {
+  font-weight: bold;
+}
+
+td, td img {
+  vertical-align: top;
+}
+
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+
+pre, code, kbd, samp {
+  font-family: monospace, sans-serif;
+}
+
+.clickable,
+label,
+input[type=button],
+input[type=submit],
+input[type=file],
+button {
+  cursor: pointer;
+}
+
+button, input, select, textarea {
+  margin: 0;
+}
+
+button,
+input[type=button] {
+  width: auto;
+  overflow: visible;
+}
+.ie7 img {
+  -ms-interpolation-mode: bicubic;
+}
+
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+h1, h2, h3, h4, h5, h6, div, p, span, ul, li, ol, select, option, label, input, a {
+  font-family: "Fira Mono", monospace;
+}
+
+.play-board {
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.play-board.flex {
+  display: flex;
+  opacity: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.play-board.flex.visible {
+  opacity: 1;
+}
+
+.board {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 150px;
+}
+
+.board.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.play {
+  width: 100px;
+  height: 100px;
+  font-size: 64px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  border: 3px solid #000000;
+  border-radius: 15px;
+}
+
+.play p {
+  position: relative;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  line-height: 48px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
+  font-weight: 700;
+  color: #000;
+}
+
+.play--times {
+  border: none;
+}
+
+.answer {
+  margin-top: 150px;
+}
+
+
+
+form input::-webkit-outer-spin-button,
+form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+form input[type=number] {
+  -moz-appearance: textfield;
+}
+
+form label {
+  font-family: "Fira Mono", monospace;
+  color: black;
+  text-shadow: 2px 2px 2px rgba(180, 0, 255, 0.3);
+}
+
+form label, form input {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  cursor: auto;
+}
+
+form input {
+  margin-top: 10px;
+  width: 200px;
+  height: 100px;
+  outline: none;
+  font-family: "Fira Mono", monospace;
+  border: 3px solid #333;
+  border-radius: 15px;
+  font-size: 64px;
+  color: #333;
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
+  font-weight: 700;
+}
+
+.message {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.message--block {
+  position: relative;
+  background-color: white;
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding: 50px 50px 0;
+  text-align: center;
+}
+
+.message--block h1 {
+  color: #333;
+  font-size: 6vw;
+  font-weight: 900;
+}
+
+.message--block p {
+  margin-top: 25px;
+}
+
+.message--block select {
+  margin-top: 50px;
+  border: 2px solid #333;
+  outline: none;
+  padding: 10px 25px;
+}
+
+.message--block select option {
+  position: relative;
+  margin-top: 25px;
+}
+
+.message--block .btn--submit {
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  padding: 10px 25px;
+  background-color: #333;
+  color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 50px auto 0;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  opacity: .7;
+  -webkit-transition: opacity .2s ease-in-out;
+  -o-transition: opacity .2s ease-in-out;
+  transition: opacity .2s ease-in-out;
+}
+
+.message--block .btn--submit:hover {
+  opacity: 1;
+}
+
+.message--block .count {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.message.visible {
+  z-index: 9;
+  opacity: 1;
+}
+
